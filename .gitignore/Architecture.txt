@@ -1,6 +1,0 @@
-Agenda - text to SQL LLM Application
-prompt --> LLM --> Gemini Pro ----> Query ---> SQl Database --> Response
-
-Implementation
-1.SQLlite-----insert some records---python programming
-2.LLM Application --> gemini Pro---> SQL Database
