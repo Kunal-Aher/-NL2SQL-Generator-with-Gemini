@@ -1,55 +1,5 @@
 # NL2SQL-Generator-with-Gemini
-A system that converts natural language queries into SQL statements using the Gemini model, tailored for database interaction and query generation.
 
-{
-  "project_name": "Natural Language to SQL Generator",
-  "description": "A system that converts natural language queries into SQL statements using the Gemini model, tailored for database interaction and query generation.",
-  "goal": "Enable users to type natural language requests and automatically generate accurate SQL queries for relational databases.",
-  "technology_stack": {
-    "model": "Gemini",
-    "language": "Python",
-    "frameworks": ["LangChain", "Streamlit (optional for UI)"],
-    "database": ["PostgreSQL", "MySQL (compatible targets)"],
-    "others": ["Pandas (for previewing data)", "SQLAlchemy (for database connection)"]
-  },
-  "dataset_examples": [
-    {
-      "nl_query": "Get the customers who have placed orders but never made a payment.",
-      "sql_output": "SELECT c.customer_id, c.customer_name FROM customers c JOIN orders o ON c.customer_id = o.customer_id LEFT JOIN payments p ON o.order_id = p.order_id WHERE p.payment_id IS NULL;"
-    },
-    {
-      "nl_query": "Find the top 3 products with the highest number of orders.",
-      "sql_output": "SELECT p.product_id, p.product_name, COUNT(o.order_id) AS order_count FROM products p JOIN orders o ON p.product_id = o.product_id GROUP BY p.product_id, p.product_name ORDER BY order_count DESC LIMIT 3;"
-    },
-    {
-      "nl_query": "Find employees who are managers.",
-      "sql_output": "SELECT e.employee_id, e.employee_name FROM employees e WHERE e.employee_id IN (SELECT DISTINCT manager_id FROM employees WHERE manager_id IS NOT NULL);"
-    },
-    {
-      "nl_query": "Find all orders placed in the last 30 days.",
-      "sql_output": "SELECT * FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL '30 days';"
-    },
-    {
-      "nl_query": "Find the total sales amount for each customer.",
-      "sql_output": "SELECT c.customer_id, c.customer_name, SUM(p.amount) AS total_sales FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN payments p ON o.order_id = p.order_id GROUP BY c.customer_id, c.customer_name;"
-    }
-  ],
-  "future_scope": [
-    "Expand to support more complex SQL (CTEs, subqueries, window functions)",
-    "Implement feedback loop to refine model outputs",
-    "Add support for database schema ingestion and auto-validation"
-  ],
-  "team_role": {
-    "name": "Kunal Aher",
-    "role": "Aspiring AI/ML Engineer",
-    "responsibilities": [
-      "Prompt engineering and model fine-tuning",
-      "Building training dataset from natural language–SQL pairs",
-      "Integration with backend databases",
-      "Evaluation and accuracy tuning of SQL generation"
-    ]
-  }
-}
 
 # 🤖 NLP to SQL, Pandas & NumPy Code Generator
 
