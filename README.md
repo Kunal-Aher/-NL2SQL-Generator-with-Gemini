@@ -51,11 +51,6 @@ A system that converts natural language queries into SQL statements using the Ge
   }
 }
 
-
-
-
-
-```markdown
 # 🤖 NLP to SQL, Pandas & NumPy Code Generator
 
 Transform natural language instructions into executable **SQL queries**, **Pandas**, and **NumPy** code using **Google Gemini** (Generative AI) and an intuitive **Streamlit interface**.
