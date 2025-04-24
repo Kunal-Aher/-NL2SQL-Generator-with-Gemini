@@ -99,8 +99,10 @@ nlp-to-code/
 ### Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/your-username/nlp-to-code-generator.git
-cd nlp-to-code-generator
+git clone https://github.com/your-username/NL2SQL-Generator-with-Gemini
+.git
+cd NL2SQL-Generator-with-Gemini
+
 ```
 
 ### Step 2: Create and activate virtual environment
