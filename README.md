@@ -131,8 +131,8 @@ Feel free to fork this repo, raise issues, or create pull requests.
 ## 👤 Author
 
 **Kunal Aher**  
-📧 kunalaher@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/kunalaher)
+📧 kunalaher0538@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/kunal-aher-506162210/)
 
 ---
 
